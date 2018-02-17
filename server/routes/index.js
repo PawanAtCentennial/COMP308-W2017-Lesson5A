@@ -35,19 +35,8 @@ router.get('/gamelist', (req, res, next) => {
 
 });
 
-/* GET products page. */
-router.get('/projects', (req, res, next) => {
-  res.render('content/projects', {
-    title: 'Projects'
-   });
-});
 
-/* GET services page. */
-router.get('/services', (req, res, next) => {
-  res.render('content/services', {
-    title: 'Services'
-   });
-});
+
 
 /* GET contact page. */
 router.get('/contact', (req, res, next) => {
