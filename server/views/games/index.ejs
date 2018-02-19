@@ -8,7 +8,7 @@
 
           <br>
           <h3>Games List</h3>
-
+<a class="btn btn-primary" href="/games/add" ><i class ="fa fa-plus"></i>Add a Game</a>
 <table class="table table-striped table-hover table-bordered">
   <tr>
    <th>Name</th>
@@ -23,8 +23,8 @@
     <td> <%= games[count].name %> </td>
     <td> <%= games[count].cost %> </td>
     <td> <%= games[count].rating %> </td>
-    <td class="text-center"><a class="btn btn-primary" href="#" role="button"><i class ="fa fa-pencil-square-o"></i>Edit</a></td>
-    <td class="text-center"><a class="btn btn-danger" href="#" role="button"><i class ="fa fa-trash-o"></i>Delete</a></td>
+    <td class="text-center"><a class="btn btn-primary" href="/games/<%= games[count]._id %>" role="button"><i class ="fa fa-pencil-square-o"></i>Edit</a></td>
+    <td class="text-center"><a class="btn btn-danger" href="/games/delete/<%= games[count]._id %>" role="button"><i class ="fa fa-trash-o"></i>Delete</a></td>
    
   </tr>
   <% } %>
